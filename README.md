@@ -39,13 +39,13 @@ Of course, the lack of flow, grammar, and meaning are all much
 bigger problems with the generated rhymes. I'm still working on it.
 
 # Sample rhymes
-Obtained by running `rhymes.test()` a few times in the ipython REPL. Very lightly massaged.
+A few I liked, obtained by running `rhymes.test()` a few times in the ipython REPL.
 
-"you get it your own Smith's earful And this bar world's in sitting? Did is time warm (arm of a diseasoning  
-Sweet do your bro, take sure you could wrong Even we needed they over, the strain the rooming of greasoning"
+"kid, you're goes the weed, gettin black, he wore jelly  
+looking but was depicted they too hot smelly"
 
-"JJ Uh, last you're dements off life I wonder than June Sounds, a neatly come drama... goes tryin together  
-sicko Why young Rings slang (There's a man On a rubber's back in the stand you! We trife to get weather"
+"goin y'all just know the shit come on the rain bubbles  
+the people we canvas Instead off she doubles"
 
-"seem the grab you Don't like for his Coogi in high volume will that rap over word from a good, reduced  
-much of the nine, she was to Poetry he's truth was on Brooklyn Plus nobody wanna hand Tilling to roost"
+"to bag of science out 'em I knew, known That closely  
+of the villain with the beatbox The gone and the mostly"

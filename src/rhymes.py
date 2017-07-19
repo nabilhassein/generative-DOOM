@@ -33,7 +33,7 @@ def get_rhyming_pair(words):
     return vocab_word, random.choice(rhymes)
 
 
-def train_reverse_char_model(data, order=4):
+def train_reverse_char_model(data, order=5):
     pad = "~" * order
     data = (pad + data)[::-1]
 
@@ -59,7 +59,7 @@ def generate_previous_char(model, future, order):
         if x <= 0: return c
 
 
-def generate_forward_text(model, order, seed=None, nletters=100):
+def generate_forward_text(model, order, seed=None, nletters=50):
     seed = seed[::-1]
     future = seed or ("~" * order)
     out = [c for c in seed]
@@ -71,7 +71,7 @@ def generate_forward_text(model, order, seed=None, nletters=100):
     return "".join(out)[::-1]
 
 
-def test(model=None, order=4):
+def test(model=None, order=5):
     song_dict = get_songs()
     all_songs = '\n'.join(song_dict.values())
     unique_words = get_unique_words(song_dict)
@@ -82,7 +82,10 @@ def test(model=None, order=4):
     def drop_until_full_word(s):
         return s.split(' ', 1)[1].replace('\n', ' ')
 
-    lines = [drop_until_full_word(generate_forward_text(model, order, word))
-             for word in (word1, word2)]
+    try:
+        lines = [drop_until_full_word(generate_forward_text(model, order, word))
+                 for word in (word1, word2)]
+    except KeyError:
+        return test()
 
     return '\n'.join(lines)
