@@ -7,7 +7,7 @@ from spacy.en.language_data import STOP_WORDS
 
 
 def get_songs(data_dir=None):
-    data_dir = data_dir or os.path.abspath('../data')
+    data_dir = data_dir or os.path.abspath('../../data')
     directories = [os.path.join(data_dir, d) for d in os.listdir(data_dir)]
 
     return {song: open(os.path.join(d, song)).read()
