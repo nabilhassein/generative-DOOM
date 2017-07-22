@@ -12,8 +12,7 @@
   <button id="rhyme">Rhyme!</button>
   <ul id="output">
   <script>
-    var songs = getSongs();
-    var words = getUniqueWords(songs);
+    var words = getUniqueWords();
     $("#rhyme").click(function() {
       $("#output").empty();
       $("#output").append("<li>" + getRhymingPair(words) + "</li>");
