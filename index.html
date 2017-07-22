@@ -12,10 +12,13 @@
   <button id="rhyme">Rhyme!</button>
   <ul id="output">
   <script>
+    var model = getModel();
     var words = getUniqueWords();
     $("#rhyme").click(function() {
       $("#output").empty();
-      $("#output").append("<li>" + getRhymingPair(words) + "</li>");
+      var lines = main();
+      $("#output").append("<li>" + lines[0] + "</li>");
+      $("#output").append("<li>" + lines[1] + "</li>");
   });
   </script>
 
