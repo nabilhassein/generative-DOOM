@@ -9,12 +9,11 @@
   <script type="text/javascript" src="rhymes.js"></script>
   <script type="text/javascript" src="pronouncing-browser.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <input id="word"><button id="rhyme">Rhyme!</button>
+  <button id="rhyme">Rhyme!</button>
   <ul id="output">
   <script>
     var songs = getSongs();
     var words = getUniqueWords(songs);
-    console.log(words);
     $("#rhyme").click(function() {
       $("#output").empty();
       $("#output").append("<li>" + getRhymingPair(words) + "</li>");

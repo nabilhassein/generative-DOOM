@@ -157,9 +157,6 @@ function getSongs() {
 
     for (var i = 0; i < songs.length; i++) {
         var song = songs[i];
-        // fetch('data/' + song).then(function(response) {
-        //     songObj[song] = response;
-        // });
         $.ajax({
             async: false,
             url: 'data/' + song,
